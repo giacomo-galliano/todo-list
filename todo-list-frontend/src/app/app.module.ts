@@ -5,22 +5,25 @@ import {AppComponent} from './app.component';
 import {TodoItemComponent} from './todo-item/todo-item.component';
 import {FormsModule} from "@angular/forms";
 import {ProgressBarComponent} from './progress-bar/progress-bar.component';
-import { NotificationComponent } from './notification/notification.component';
-import { NotificationListComponent } from './notification-list/notification-list.component';
+import {NotificationComponent} from './notification/notification.component';
+import {NotificationListComponent} from './notification-list/notification-list.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TodoItemComponent,
-    ProgressBarComponent,
-    NotificationComponent,
-    NotificationListComponent
-  ],
+    declarations: [
+        AppComponent,
+        TodoItemComponent,
+        ProgressBarComponent,
+        NotificationComponent,
+        NotificationListComponent
+    ],
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
-  providers: [],
-  bootstrap: [AppComponent]
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
