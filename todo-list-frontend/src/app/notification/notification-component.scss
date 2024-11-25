@@ -1,0 +1,28 @@
+@import "src/styles";
+
+.notification-container{
+  width: 15rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 1rem;
+  opacity: 0.9;
+
+  .notification-title{
+    margin-bottom: 0.5rem;
+
+    .notification-close-icon {
+      position: absolute;
+      top: 0.7rem;
+      right: 0.7rem;
+      cursor: pointer
+    }
+  }
+}
+
+@each $color, $value in $notification-colors {
+  .notification-style-#{$color}{
+    background-color: $value;
+  }
+}

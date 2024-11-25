@@ -1,14 +1,27 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: row;
   border: 1px solid grey;
   padding: 12px 0 12px 12px;
   margin-top: 12px;
   border-radius: 6px;
+  justify-content: space-between;
 }
 
 .task-indicator {
   display: inline-block;
-  width: calc(100% - 37px);
+  width: 90%;
+}
+
+.priority-and-action{
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.remove-icon {
+  cursor: pointer;
 }
 
 .priority-indicator {

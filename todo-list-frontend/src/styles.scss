@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+$notification-colors: (
+        'success': #258900,
+        'error': #F51500,
+        'info': #1775BE
+)

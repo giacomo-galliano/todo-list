@@ -5,12 +5,16 @@ import {AppComponent} from './app.component';
 import {TodoItemComponent} from './todo-item/todo-item.component';
 import {FormsModule} from "@angular/forms";
 import {ProgressBarComponent} from './progress-bar/progress-bar.component';
+import { NotificationComponent } from './notification/notification.component';
+import { NotificationListComponent } from './notification-list/notification-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoItemComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    NotificationComponent,
+    NotificationListComponent
   ],
     imports: [
         BrowserModule,
