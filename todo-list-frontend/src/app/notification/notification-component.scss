@@ -1,4 +1,3 @@
-@import "src/styles";
 
 .notification-container{
   width: 15rem;
@@ -20,6 +19,12 @@
     }
   }
 }
+
+$notification-colors: (
+        'success': #258900,
+        'error': #F51500,
+        'info': #1775BE
+);
 
 @each $color, $value in $notification-colors {
   .notification-style-#{$color}{
