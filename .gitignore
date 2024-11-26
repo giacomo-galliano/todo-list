@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/todo-list-frontend/dist
 # Only exists if Bazel was run
 /bazel-out
 
@@ -43,3 +44,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Gradle
+/.gradle
+/todo-list-backend/build
+gradle/wrapper/gradle-wrapper.properties
+
+# Package files
+*.jar
